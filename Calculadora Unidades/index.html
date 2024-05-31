@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Unidades</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<h1>Calculadora de Unidades</h1>
+
+<div class="container">
+  <h2>Longitud</h2>
+  <input type="number" id="lengthInput">
+  <select id="lengthFrom">
+    <option value="km">Kilómetro</option>
+    <option value="m">Metro</option>
+    <option value="cm">Centímetro</option>
+    <option value="mm">Milímetro</option>
+    <option value="mi">Milla</option>
+    <option value="yd">Yarda</option>
+    <option value="ft">Pie</option>
+    <option value="in">Pulgada</option>
+  </select>
+
+  <h2>Masa</h2>
+  <input type="number" id="massInput">
+  <select id="massFrom">
+    <option value="t">Tonelada</option>
+    <option value="kg">Kilogramo</option>
+    <option value="g">Gramo</option>
+    <option value="mg">Miligramo</option>
+    <option value="lb">Libra</option>
+    <option value="oz">Onza</option>
+  </select>
+
+  <h2>Velocidad</h2>
+  <input type="number" id="speedInput">
+  <select id="speedFrom">
+    <option value="mph">Millas por hora</option>
+    <option value="mps">Millas por segundo</option>
+    <option value="kph">Kilómetros por hora</option>
+    <option value="kps">Kilómetros por segundo</option>
+    <option value="kn">Nudo</option>
+    <option value="mps2">Metros por segundo</option>
+  </select>
+
+  <button onclick="calculate()">Calcular</button>
+  <div id="result"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
